@@ -1,0 +1,102 @@
+[
+  {
+    "question": "Quel prophète est associé à ces images ?",
+    "images": [
+      "/assets/noah-ark.png",
+      "/assets/animals.png",
+      "/assets/rain.png"
+    ],
+    "options": ["Moussa", "Nouh", "Ibrahim", "Youssef"],
+    "correctAnswer": "Nouh",
+    "level": "1",
+    "hint": "Ce prophète a construit une arche pour survivre au déluge."
+  },
+  {
+    "question": "Quel prophète est associé à ces images ?",
+    "images": [
+      "/assets/staff-snake.png",
+      "/assets/red-sea.png",
+      "/assets/pharaoh.png"
+    ],
+    "options": ["Moussa", "Nouh", "Ibrahim", "Youssef"],
+    "correctAnswer": "Moussa",
+    "level": "2",
+    "hint": "Ce prophète a divisé la mer Rouge pour échapper au pharaon."
+  },
+  {
+    "question": "Quel prophète est associé à ces images ?",
+    "images": ["/assets/ram.png", "/assets/sacrifice.png", "/assets/fire.png"],
+    "options": ["Moussa", "Nouh", "Ibrahim", "Youssef"],
+    "correctAnswer": "Ibrahim",
+    "level": "3",
+    "hint": "Ce prophète était prêt à sacrifier son fils avant que Dieu n'intervienne."
+  },
+  {
+    "question": "Quel prophète est associé à ces images ?",
+    "images": ["/assets/dream.png", "/assets/prison.png", "/assets/egypt.png"],
+    "options": ["Moussa", "Nouh", "Ibrahim", "Youssef"],
+    "correctAnswer": "Youssef",
+    "level": "4",
+    "hint": "Ce prophète a interprété les rêves du pharaon et est devenu un dirigeant en Égypte."
+  },
+  {
+    "question": "Quel prophète est associé à ces images ?",
+    "images": [
+      "/assets/cradle.png",
+      "/assets/speaking-infant.png",
+      "/assets/mary.png"
+    ],
+    "options": ["Issa", "Zakaria", "Yahya", "Souleimane"],
+    "correctAnswer": "Issa",
+    "level": "5",
+    "hint": "Ce prophète a parlé alors qu'il était encore un nourrisson dans son berceau."
+  },
+  {
+    "question": "Quel prophète est associé à ces images ?",
+    "images": [
+      "/assets/patience.png",
+      "/assets/illness.png",
+      "/assets/healing.png"
+    ],
+    "options": ["Ayoub", "Idris", "Salih", "Houd"],
+    "correctAnswer": "Ayoub",
+    "level": "6",
+    "hint": "Ce prophète est connu pour sa patience extraordinaire face à de terribles épreuves."
+  },
+  {
+    "question": "Quel prophète est associé à ces images ?",
+    "images": [
+      "/assets/whale.png",
+      "/assets/darkness.png",
+      "/assets/nineveh.png"
+    ],
+    "options": ["Younous", "Ayoub", "Dawoud", "Souleimane"],
+    "correctAnswer": "Younous",
+    "level": "7",
+    "hint": "Ce prophète a été avalé par un grand poisson après avoir fui sa mission."
+  },
+  {
+    "question": "Quel prophète est associé à ces images ?",
+    "images": ["/assets/throne.png", "/assets/jinn.png", "/assets/temple.png"],
+    "options": ["Dawoud", "Souleimane", "Younous", "Ayoub"],
+    "correctAnswer": "Souleimane",
+    "level": "8",
+    "hint": "Ce prophète pouvait parler aux animaux et commander aux jinns."
+  },
+  {
+    "question": "Quel prophète est associé à ces images ?",
+    "images": ["/assets/camel.png", "/assets/rock.png", "/assets/thamud.png"],
+    "options": ["Salih", "Houd", "Choaib", "Idris"],
+    "correctAnswer": "Salih",
+    "level": "9",
+    "hint": "Ce prophète a fait sortir une chamelle d'un rocher comme signe pour son peuple."
+  },
+  {
+    "question": "Quel prophète est associé à ces images ?",
+    "images": ["/assets/cave.png", "/assets/quran.png", "/assets/mecca.png"],
+    "options": ["Mohammed", "Adam", "Zakaria", "Yahya"],
+    "correctAnswer": "Mohammed",
+    "level": "10",
+    "hint": "Ce prophète a reçu le Coran dans une cave près de La Mecque."
+  }
+]
