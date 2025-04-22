@@ -1,0 +1,918 @@
+{
+  "_comment": "This JSON file contains data for: users, products, orders, events, weather, and financialTransactions."
+}
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "johndoe",
+      "email": "john.doe@example.com",
+      "firstName": "John",
+      "lastName": "Doe",
+      "age": 32,
+      "active": true,
+      "role": "admin",
+      "dateJoined": "2023-01-15T08:30:00Z",
+      "address": {
+        "street": "123 Main St",
+        "city": "Springfield",
+        "state": "IL",
+        "zipCode": "62704",
+        "country": "USA"
+      },
+      "phoneNumbers": [
+        {
+          "type": "home",
+          "number": "555-123-4567"
+        },
+        {
+          "type": "work",
+          "number": "555-987-6543"
+        }
+      ],
+      "preferences": {
+        "theme": "dark",
+        "notifications": true,
+        "language": "en-US"
+      }
+    },
+    {
+      "id": 2,
+      "username": "janedoe",
+      "email": "jane.doe@example.com",
+      "firstName": "Jane",
+      "lastName": "Doe",
+      "age": 28,
+      "active": true,
+      "role": "user",
+      "dateJoined": "2023-03-22T14:15:00Z",
+      "address": {
+        "street": "456 Oak Ave",
+        "city": "Portland",
+        "state": "OR",
+        "zipCode": "97201",
+        "country": "USA"
+      },
+      "phoneNumbers": [
+        {
+          "type": "mobile",
+          "number": "555-555-5555"
+        }
+      ],
+      "preferences": {
+        "theme": "light",
+        "notifications": false,
+        "language": "fr-FR"
+      }
+    },
+    {
+      "id": 3,
+      "username": "bob_smith",
+      "email": "bob.smith@example.com",
+      "firstName": "Bob",
+      "lastName": "Smith",
+      "age": null,
+      "active": false,
+      "role": "user",
+      "dateJoined": "2022-11-05T09:45:00Z",
+      "address": null,
+      "phoneNumbers": [],
+      "preferences": {
+        "theme": "system",
+        "notifications": true,
+        "language": "en-GB"
+      }
+    },
+    {
+      "id": 4,
+      "username": "maria_garcia",
+      "email": "maria.garcia@example.com",
+      "firstName": "María",
+      "lastName": "García",
+      "age": 45,
+      "active": true,
+      "role": "editor",
+      "dateJoined": "2024-02-18T11:20:00Z",
+      "address": {
+        "street": "Calle Principal 789",
+        "city": "Madrid",
+        "state": "",
+        "zipCode": "28001",
+        "country": "Spain"
+      },
+      "phoneNumbers": [
+        {
+          "type": "mobile",
+          "number": "+34-612-345-678"
+        }
+      ],
+      "preferences": {
+        "theme": "light",
+        "notifications": true,
+        "language": "es-ES"
+      }
+    },
+    {
+      "id": 5,
+      "username": "",
+      "email": "test@invalid",
+      "firstName": "",
+      "lastName": "",
+      "age": -1,
+      "active": false,
+      "role": "guest",
+      "dateJoined": "Invalid Date",
+      "address": {
+        "street": "",
+        "city": "",
+        "state": "",
+        "zipCode": "",
+        "country": ""
+      },
+      "phoneNumbers": [
+        {
+          "type": "",
+          "number": ""
+        }
+      ],
+      "preferences": null
+    }
+  ],
+  "products": [
+    {
+      "id": "P-001",
+      "name": "Smartphone X",
+      "description": "Latest flagship smartphone with advanced features",
+      "price": 999.99,
+      "currency": "USD",
+      "category": "Electronics",
+      "tags": ["smartphone", "tech", "5G"],
+      "inStock": true,
+      "stockQuantity": 150,
+      "manufacturer": {
+        "name": "TechCorp",
+        "country": "USA",
+        "established": 1992
+      },
+      "ratings": [
+        {"userId": 1, "score": 4.5, "comment": "Great phone!"},
+        {"userId": 2, "score": 5.0, "comment": "Best purchase ever"},
+        {"userId": 3, "score": 3.8, "comment": "Good but expensive"}
+      ],
+      "dimensions": {
+        "height": 15.2,
+        "width": 7.1,
+        "depth": 0.8,
+        "unit": "cm"
+      },
+      "lastUpdated": "2024-09-15T10:30:00Z"
+    },
+    {
+      "id": "P-002",
+      "name": "Wireless Earbuds Pro",
+      "description": "Premium wireless earbuds with noise cancellation",
+      "price": 199.50,
+      "currency": "USD",
+      "category": "Audio",
+      "tags": ["earbuds", "wireless", "audio"],
+      "inStock": true,
+      "stockQuantity": 75,
+      "manufacturer": {
+        "name": "SoundWave",
+        "country": "South Korea",
+        "established": 2005
+      },
+      "ratings": [
+        {"userId": 4, "score": 4.8, "comment": "Amazing sound quality"},
+        {"userId": 1, "score": 4.0, "comment": "Good but battery life could be better"}
+      ],
+      "dimensions": {
+        "height": 5.0,
+        "width": 3.5,
+        "depth": 2.0,
+        "unit": "cm"
+      },
+      "lastUpdated": "2024-08-22T14:15:00Z"
+    },
+    {
+      "id": "P-003",
+      "name": "Coffee Maker Deluxe",
+      "description": "Programmable coffee maker with thermal carafe",
+      "price": 89.95,
+      "currency": "USD",
+      "category": "Home Appliances",
+      "tags": ["coffee", "kitchen", "appliance"],
+      "inStock": false,
+      "stockQuantity": 0,
+      "manufacturer": {
+        "name": "HomeComfort",
+        "country": "Germany",
+        "established": 1978
+      },
+      "ratings": [],
+      "dimensions": {
+        "height": 35.0,
+        "width": 22.5,
+        "depth": 18.0,
+        "unit": "cm"
+      },
+      "lastUpdated": "2024-07-10T09:45:00Z"
+    },
+    {
+      "id": "P-004",
+      "name": "",
+      "description": null,
+      "price": 0,
+      "currency": "",
+      "category": "Unknown",
+      "tags": [],
+      "inStock": null,
+      "stockQuantity": -1,
+      "manufacturer": null,
+      "ratings": null,
+      "dimensions": {
+        "height": null,
+        "width": null,
+        "depth": null,
+        "unit": ""
+      },
+      "lastUpdated": "Invalid Date"
+    }
+  ],
+  "orders": [
+    {
+      "orderId": "ORD-2024-001",
+      "userId": 1,
+      "orderDate": "2024-04-15T14:30:00Z",
+      "status": "delivered",
+      "items": [
+        {
+          "productId": "P-001",
+          "quantity": 1,
+          "pricePerUnit": 999.99,
+          "totalPrice": 999.99
+        },
+        {
+          "productId": "P-002",
+          "quantity": 2,
+          "pricePerUnit": 199.50,
+          "totalPrice": 399.00
+        }
+      ],
+      "shippingAddress": {
+        "street": "123 Main St",
+        "city": "Springfield",
+        "state": "IL",
+        "zipCode": "62704",
+        "country": "USA"
+      },
+      "paymentMethod": "credit_card",
+      "paymentDetails": {
+        "cardType": "Visa",
+        "lastFourDigits": "4321"
+      },
+      "subtotal": 1398.99,
+      "tax": 119.91,
+      "shippingCost": 15.00,
+      "discountCode": "SUMMER10",
+      "discountAmount": 139.90,
+      "total": 1394.00,
+      "trackingNumber": "TN-87654321",
+      "estimatedDelivery": "2024-04-20T00:00:00Z",
+      "actualDelivery": "2024-04-19T13:45:00Z",
+      "notes": "Leave at front door"
+    },
+    {
+      "orderId": "ORD-2024-002",
+      "userId": 2,
+      "orderDate": "2024-04-18T09:15:00Z",
+      "status": "processing",
+      "items": [
+        {
+          "productId": "P-002",
+          "quantity": 1,
+          "pricePerUnit": 199.50,
+          "totalPrice": 199.50
+        }
+      ],
+      "shippingAddress": {
+        "street": "456 Oak Ave",
+        "city": "Portland",
+        "state": "OR",
+        "zipCode": "97201",
+        "country": "USA"
+      },
+      "paymentMethod": "paypal",
+      "paymentDetails": {
+        "email": "jane.doe@example.com"
+      },
+      "subtotal": 199.50,
+      "tax": 15.96,
+      "shippingCost": 8.50,
+      "discountCode": null,
+      "discountAmount": 0,
+      "total": 223.96,
+      "trackingNumber": null,
+      "estimatedDelivery": "2024-04-25T00:00:00Z",
+      "actualDelivery": null,
+      "notes": null
+    },
+    {
+      "orderId": "ORD-2024-003",
+      "userId": 4,
+      "orderDate": "2024-03-30T11:45:00Z",
+      "status": "cancelled",
+      "items": [
+        {
+          "productId": "P-003",
+          "quantity": 1,
+          "pricePerUnit": 89.95,
+          "totalPrice": 89.95
+        }
+      ],
+      "shippingAddress": {
+        "street": "Calle Principal 789",
+        "city": "Madrid",
+        "state": "",
+        "zipCode": "28001",
+        "country": "Spain"
+      },
+      "paymentMethod": "credit_card",
+      "paymentDetails": {
+        "cardType": "Mastercard",
+        "lastFourDigits": "8765"
+      },
+      "subtotal": 89.95,
+      "tax": 18.89,
+      "shippingCost": 25.00,
+      "discountCode": null,
+      "discountAmount": 0,
+      "total": 133.84,
+      "trackingNumber": null,
+      "estimatedDelivery": null,
+      "actualDelivery": null,
+      "notes": "Order cancelled due to product out of stock",
+      "cancellationReason": "Item out of stock",
+      "cancellationDate": "2024-04-01T10:20:00Z",
+      "refundAmount": 133.84,
+      "refundDate": "2024-04-03T14:30:00Z"
+    },
+    {
+      "orderId": "",
+      "userId": null,
+      "orderDate": "Invalid Date",
+      "status": "unknown",
+      "items": [],
+      "shippingAddress": null,
+      "paymentMethod": "",
+      "paymentDetails": null,
+      "subtotal": null,
+      "tax": null,
+      "shippingCost": null,
+      "discountCode": "",
+      "discountAmount": null,
+      "total": 0,
+      "trackingNumber": "",
+      "estimatedDelivery": null,
+      "actualDelivery": null,
+      "notes": null
+    }
+  ],
+  "events": [
+    {
+      "id": "EVT-001",
+      "title": "Annual Tech Conference",
+      "description": "A gathering of technology professionals and enthusiasts",
+      "startDate": "2024-06-15T09:00:00Z",
+      "endDate": "2024-06-17T18:00:00Z",
+      "location": {
+        "name": "City Convention Center",
+        "address": "789 Convention Ave",
+        "city": "San Francisco",
+        "state": "CA",
+        "zipCode": "94103",
+        "country": "USA",
+        "coordinates": {
+          "latitude": 37.7749,
+          "longitude": -122.4194
+        }
+      },
+      "organizer": {
+        "name": "TechEvents Inc.",
+        "contactEmail": "info@techevents.example.com",
+        "contactPhone": "555-789-0123"
+      },
+      "capacity": 1500,
+      "registered": 1287,
+      "ticketPrice": 499.99,
+      "currency": "USD",
+      "categories": ["Technology", "Networking", "Professional Development"],
+      "tags": ["tech", "conference", "networking"],
+      "speakers": [
+        {
+          "name": "Sarah Johnson",
+          "bio": "CEO of TechInnovate",
+          "topic": "Future of AI"
+        },
+        {
+          "name": "Michael Chen",
+          "bio": "CTO of DataSystems",
+          "topic": "Blockchain Applications"
+        },
+        {
+          "name": "Priya Patel",
+          "bio": "Privacy Researcher",
+          "topic": "Data Security Trends"
+        }
+      ],
+      "schedule": [
+        {
+          "day": "2024-06-15",
+          "sessions": [
+            {
+              "time": "09:00-10:30",
+              "title": "Registration & Welcome",
+              "location": "Main Hall"
+            },
+            {
+              "time": "10:30-12:00",
+              "title": "Keynote: Future of AI",
+              "speaker": "Sarah Johnson",
+              "location": "Auditorium A"
+            }
+          ]
+        },
+        {
+          "day": "2024-06-16",
+          "sessions": [
+            {
+              "time": "09:00-10:30",
+              "title": "Blockchain Workshop",
+              "speaker": "Michael Chen",
+              "location": "Room 101"
+            },
+            {
+              "time": "11:00-12:30",
+              "title": "Data Security Panel",
+              "speaker": "Priya Patel",
+              "location": "Auditorium B"
+            }
+          ]
+        }
+      ],
+      "sponsors": ["TechCorp", "DataSystems", "SecureNet"],
+      "status": "upcoming",
+      "lastUpdated": "2024-04-01T15:45:00Z"
+    },
+    {
+      "id": "EVT-002",
+      "title": "Community Cleanup Day",
+      "description": "Volunteer event to clean local parks and streets",
+      "startDate": "2024-05-22T08:00:00Z",
+      "endDate": "2024-05-22T14:00:00Z",
+      "location": {
+        "name": "Central Park",
+        "address": "123 Park Road",
+        "city": "Riverside",
+        "state": "CA",
+        "zipCode": "92501",
+        "country": "USA",
+        "coordinates": {
+          "latitude": 33.9806,
+          "longitude": -117.3755
+        }
+      },
+      "organizer": {
+        "name": "Riverside Community Association",
+        "contactEmail": "community@riverside.example.org",
+        "contactPhone": "555-234-5678"
+      },
+      "capacity": 200,
+      "registered": 75,
+      "ticketPrice": 0,
+      "currency": "USD",
+      "categories": ["Community", "Environment", "Volunteer"],
+      "tags": ["cleanup", "volunteer", "community"],
+      "speakers": [],
+      "schedule": [
+        {
+          "day": "2024-05-22",
+          "sessions": [
+            {
+              "time": "08:00-08:30",
+              "title": "Check-in & Equipment Distribution",
+              "location": "Park Entrance"
+            },
+            {
+              "time": "08:30-12:00",
+              "title": "Cleanup Activities",
+              "location": "Various Locations"
+            },
+            {
+              "time": "12:00-14:00",
+              "title": "Lunch & Community Celebration",
+              "location": "Picnic Area"
+            }
+          ]
+        }
+      ],
+      "sponsors": ["Local Waste Management", "City of Riverside"],
+      "status": "upcoming",
+      "lastUpdated": "2024-04-10T11:20:00Z"
+    },
+    {
+      "id": "EVT-003",
+      "title": "International Film Festival",
+      "description": "Annual celebration of independent cinema from around the world",
+      "startDate": "2024-09-05T18:00:00Z",
+      "endDate": "2024-09-12T23:00:00Z",
+      "location": {
+        "name": "Downtown Cinema Complex",
+        "address": "456 Arts District",
+        "city": "New York",
+        "state": "NY",
+        "zipCode": "10012",
+        "country": "USA",
+        "coordinates": {
+          "latitude": 40.7128,
+          "longitude": -74.0060
+        }
+      },
+      "organizer": {
+        "name": "International Film Society",
+        "contactEmail": "festival@filmsoceity.example.org",
+        "contactPhone": "555-111-2222"
+      },
+      "capacity": 5000,
+      "registered": 3750,
+      "ticketPrice": 299.50,
+      "currency": "USD",
+      "categories": ["Film", "Arts", "Culture"],
+      "tags": ["cinema", "festival", "international"],
+      "schedule": [
+        {
+          "day": "2024-09-05",
+          "sessions": [
+            {
+              "time": "18:00-20:00",
+              "title": "Opening Ceremony & Premiere",
+              "location": "Main Theater"
+            }
+          ]
+        },
+        {
+          "day": "2024-09-12",
+          "sessions": [
+            {
+              "time": "19:00-23:00",
+              "title": "Awards Ceremony & Closing Film",
+              "location": "Main Theater"
+            }
+          ]
+        }
+      ],
+      "sponsors": ["Global Media Group", "ArtsFund", "National Film Board"],
+      "status": "upcoming",
+      "lastUpdated": "2024-03-25T09:30:00Z"
+    },
+    {
+      "id": "",
+      "title": null,
+      "description": "",
+      "startDate": "Invalid Date",
+      "endDate": null,
+      "location": null,
+      "organizer": {
+        "name": "",
+        "contactEmail": "invalid-email",
+        "contactPhone": ""
+      },
+      "capacity": -1,
+      "registered": null,
+      "ticketPrice": null,
+      "currency": "",
+      "categories": null,
+      "tags": null,
+      "speakers": null,
+      "schedule": [],
+      "sponsors": null,
+      "status": "unknown",
+      "lastUpdated": null
+    }
+  ],
+  "weather": [
+    {
+      "cityId": "NY-NYC",
+      "cityName": "New York City",
+      "country": "USA",
+      "coordinates": {
+        "latitude": 40.7128,
+        "longitude": -74.0060
+      },
+      "date": "2024-04-22",
+      "forecasts": [
+        {
+          "time": "00:00",
+          "temperature": 12.5,
+          "feelsLike": 11.8,
+          "humidity": 65,
+          "windSpeed": 15.3,
+          "windDirection": "NE",
+          "precipitation": 0,
+          "condition": "Clear"
+        },
+        {
+          "time": "06:00",
+          "temperature": 10.2,
+          "feelsLike": 9.5,
+          "humidity": 70,
+          "windSpeed": 12.8,
+          "windDirection": "NE",
+          "precipitation": 0,
+          "condition": "Clear"
+        },
+        {
+          "time": "12:00",
+          "temperature": 18.7,
+          "feelsLike": 18.7,
+          "humidity": 55,
+          "windSpeed": 10.5,
+          "windDirection": "E",
+          "precipitation": 0,
+          "condition": "Sunny"
+        },
+        {
+          "time": "18:00",
+          "temperature": 16.3,
+          "feelsLike": 16.0,
+          "humidity": 60,
+          "windSpeed": 14.2,
+          "windDirection": "SE",
+          "precipitation": 0,
+          "condition": "Partly Cloudy"
+        }
+      ],
+      "summary": "Mostly clear with temperatures ranging from 10°C to 19°C",
+      "alerts": []
+    },
+    {
+      "cityId": "CA-SF",
+      "cityName": "San Francisco",
+      "country": "USA",
+      "coordinates": {
+        "latitude": 37.7749,
+        "longitude": -122.4194
+      },
+      "date": "2024-04-22",
+      "forecasts": [
+        {
+          "time": "00:00",
+          "temperature": 13.8,
+          "feelsLike": 13.2,
+          "humidity": 75,
+          "windSpeed": 18.7,
+          "windDirection": "W",
+          "precipitation": 0,
+          "condition": "Foggy"
+        },
+        {
+          "time": "06:00",
+          "temperature": 12.5,
+          "feelsLike": 11.8,
+          "humidity": 80,
+          "windSpeed": 16.5,
+          "windDirection": "W",
+          "precipitation": 0,
+          "condition": "Foggy"
+        },
+        {
+          "time": "12:00",
+          "temperature": 17.2,
+          "feelsLike": 17.0,
+          "humidity": 65,
+          "windSpeed": 20.3,
+          "windDirection": "W",
+          "precipitation": 0,
+          "condition": "Partly Cloudy"
+        },
+        {
+          "time": "18:00",
+          "temperature": 15.8,
+          "feelsLike": 15.5,
+          "humidity": 70,
+          "windSpeed": 22.5,
+          "windDirection": "W",
+          "precipitation": 0,
+          "condition": "Cloudy"
+        }
+      ],
+      "summary": "Morning fog clearing to partly cloudy skies with gusty winds",
+      "alerts": []
+    },
+    {
+      "cityId": "UK-LON",
+      "cityName": "London",
+      "country": "United Kingdom",
+      "coordinates": {
+        "latitude": 51.5074,
+        "longitude": -0.1278
+      },
+      "date": "2024-04-22",
+      "forecasts": [
+        {
+          "time": "00:00",
+          "temperature": 8.5,
+          "feelsLike": 7.2,
+          "humidity": 80,
+          "windSpeed": 12.5,
+          "windDirection": "SW",
+          "precipitation": 0.5,
+          "condition": "Light Rain"
+        },
+        {
+          "time": "06:00",
+          "temperature": 7.8,
+          "feelsLike": 6.5,
+          "humidity": 85,
+          "windSpeed": 14.0,
+          "windDirection": "SW",
+          "precipitation": 2.5,
+          "condition": "Rain"
+        },
+        {
+          "time": "12:00",
+          "temperature": 12.3,
+          "feelsLike": 11.5,
+          "humidity": 75,
+          "windSpeed": 18.2,
+          "windDirection": "W",
+          "precipitation": 1.0,
+          "condition": "Light Rain"
+        },
+        {
+          "time": "18:00",
+          "temperature": 10.5,
+          "feelsLike": 9.8,
+          "humidity": 80,
+          "windSpeed": 15.6,
+          "windDirection": "W",
+          "precipitation": 0.2,
+          "condition": "Overcast"
+        }
+      ],
+      "summary": "Rainy start with showers continuing throughout the day",
+      "alerts": [
+        {
+          "type": "Weather Advisory",
+          "severity": "Moderate",
+          "description": "Periods of heavy rainfall may cause localized flooding",
+          "issuedAt": "2024-04-21T18:30:00Z",
+          "expiresAt": "2024-04-22T23:59:00Z"
+        }
+      ]
+    },
+    {
+      "cityId": "",
+      "cityName": null,
+      "country": "",
+      "coordinates": null,
+      "date": "Invalid Date",
+      "forecasts": [],
+      "summary": "",
+      "alerts": null
+    }
+  ],
+  "financialTransactions": [
+    {
+      "transactionId": "TXN-20240415-001",
+      "accountId": "ACC-12345",
+      "userId": 1,
+      "type": "debit",
+      "category": "Purchase",
+      "description": "Online Shopping - Electronics",
+      "amount": 1394.00,
+      "currency": "USD",
+      "date": "2024-04-15T14:45:22Z",
+      "status": "completed",
+      "merchant": {
+        "name": "TechStore Online",
+        "category": "Electronics",
+        "location": "Online"
+      },
+      "paymentMethod": {
+        "type": "credit_card",
+        "lastFourDigits": "4321",
+        "network": "Visa"
+      },
+      "relatedTransactions": ["TXN-20240415-001-AUTH"],
+      "notes": "Purchase of smartphone and accessories"
+    },
+    {
+      "transactionId": "TXN-20240416-001",
+      "accountId": "ACC-12345",
+      "userId": 1,
+      "type": "credit",
+      "category": "Salary",
+      "description": "Monthly Salary Deposit",
+      "amount": 5250.00,
+      "currency": "USD",
+      "date": "2024-04-16T09:00:00Z",
+      "status": "completed",
+      "merchant": {
+        "name": "Employer Inc.",
+        "category": "Employer",
+        "location": "Springfield, IL"
+      },
+      "paymentMethod": {
+        "type": "direct_deposit",
+        "accountNumber": "XXXXXX7890",
+        "bankName": "First National Bank"
+      },
+      "relatedTransactions": [],
+      "notes": "April 2024 salary"
+    },
+    {
+      "transactionId": "TXN-20240417-001",
+      "accountId": "ACC-12345",
+      "userId": 1,
+      "type": "debit",
+      "category": "Utilities",
+      "description": "Electricity Bill Payment",
+      "amount": 138.75,
+      "currency": "USD",
+      "date": "2024-04-17T10:15:30Z",
+      "status": "completed",
+      "merchant": {
+        "name": "PowerGrid Utilities",
+        "category": "Utilities",
+        "location": "Springfield, IL"
+      },
+      "paymentMethod": {
+        "type": "bank_transfer",
+        "accountNumber": "XXXXXX7890",
+        "bankName": "First National Bank"
+      },
+      "relatedTransactions": [],
+      "notes": "April 2024 electricity bill"
+    },
+    {
+      "transactionId": "TXN-20240418-001",
+      "accountId": "ACC-12345",
+      "userId": 1,
+      "type": "debit",
+      "category": "Transfer",
+      "description": "Transfer to Savings Account",
+      "amount": 1000.00,
+      "currency": "USD",
+      "date": "2024-04-18T16:30:45Z",
+      "status": "completed",
+      "merchant": null,
+      "paymentMethod": {
+        "type": "internal_transfer",
+        "accountNumber": "XXXXXX9876",
+        "bankName": "First National Bank"
+      },
+      "relatedTransactions": ["TXN-20240418-001-RCV"],
+      "notes": "Monthly savings contribution"
+    },
+    {
+      "transactionId": "TXN-20240419-001",
+      "accountId": "ACC-12345",
+      "userId": 1,
+      "type": "debit",
+      "category": "Dining",
+      "description": "Restaurant Dinner",
+      "amount": 87.50,
+      "currency": "USD",
+      "date": "2024-04-19T19:22:15Z",
+      "status": "pending",
+      "merchant": {
+        "name": "Fine Dining Restaurant",
+        "category": "Restaurant",
+        "location": "Springfield, IL"
+      },
+      "paymentMethod": {
+        "type": "credit_card",
+        "lastFourDigits": "4321",
+        "network": "Visa"
+      },
+      "relatedTransactions": [],
+      "notes": "Dinner with family"
+    },
+    {
+      "transactionId": "",
+      "accountId": null,
+      "userId": null,
+      "type": "",
+      "category": null,
+      "description": "",
+      "amount": null,
+      "currency": "",
+      "date": "Invalid Date",
+      "status": "unknown",
+      "merchant": null,
+      "paymentMethod": null,
+      "relatedTransactions": null,
+      "notes": null
+    }
+  ],
